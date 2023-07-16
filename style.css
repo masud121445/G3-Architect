@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Roboto:ital,wght@1,100&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+.header{
+    background-color: #fef0da;
+    padding:50px 240px;
+}
+.nav-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-section ul{
+    display:flex;
+    margin-right: 30px;
+}
+.nav-section ul li{
+    list-style:none;
+    font-size:16px;
+    margin-right:25px;
+}
+.nav-section ul li a{
+    text-decoration:none;
+    color:black;
+}
+.nav-title{
+    font-size:2.8rem;
+    color:black;
+}
+.banner-section{
+    max-width:800px;
+    text-align:center;
+    margin:0 auto;
+}
+.banner-title{
+    color:black;
+    font-size:4rem;
+    font-weight: 700;
+}
+.banner-description{
+    color:rgba(0, 0, 0, 0.737);
+}
+.btn-primary{
+    font-size:20px;
+    color:white;
+    padding:20px 25px;
+    background-color: #ff9f0f;
+    border:0;
+    border-radius:10px;
+}
+.banner img{
+    width:100%;
+    padding-top:20px;
+}
+.main{
+    max-width:1440px;
+    padding:70 ;
+}
+.features-container{
+    display:flex;
+    align-items: center;
+}
+.features-img-section{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+.features-content-section{
+    padding-left:60px;
+    padding-right:60px;
+}
+.features-title{
+    font-size:2.8rem;
+}
+.gray{
+    color:gray;
+    font-weight: 500;
+}
+.black{
+    color:black;
+    font-weight: 700;
+}
+.bisq{
+    color:#ff9f0f;
+    font-weight: 700;
+}
+.features-description{
+    color:rgba(0, 0, 0, 0.661);
+}
+.facts-section{
+    margin-top:10px;
+}
+.facts-title{
+    color:black;
+    font-size:2.8rem;
+}
+.facts-description{
+    margin-top:50px;
+    color:rgba(0, 0, 0, 0.661);
+}
+.facts-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.facts-card{
+    border:1px solid #fbb244;
+    border-radius:10px;
+    text-align: center;
+    padding:2px 30px;
+}
+.facts-num{
+    font-size: 2.8rem;
+    color:rgba(0, 0, 0, 0.661);
+    font-weight: 700;
+    /* padding-top:5px; */
+}
+.card-title{
+    font-size:1.5rem;
+    color:rgba(0, 0, 0, 0.661);
+    font-weight: 700;
+    /* padding-top:5px; */
+}
+.facts-img{
+    padding-top:20px;
+}
+.sponsors-text{
+    margin-top:30px;
+    margin-bottom:35px;
+    text-align:center;
+}
+.sponsors-title{
+    font-size:2.8rem;
+    color:black;
+    font-weight: 700;
+}
+.sponsors-description{
+    color:rgba(0, 0, 0, 0.661);
+}
+.sponsors-img{
+    display:flex;
+    justify-content: space-evenly;
+}
+.tab-section{
+    display:flex;
+    margin-top:150px;
+    gap:200px;
+}
+.tab-title{
+    font-size:2.8rem;
+    border-left:5px solid #ff9f0f;
+    padding-left:20px;
+    font-weight: 700;
+}
+.tab-description{
+    padding-top:10px;
+    color:rgba(0, 0, 0, 0.661);
+}
+.tab-card{
+    background-color: white;
+    border-radius:10px;
+    padding:30px 25px;
+    margin-bottom:20px;
+}
+.tab-card-description{
+    color:rgba(0, 0, 0, 0.661);
+}
+.experience{
+    align-items: center;
+    background-color:#ff9f0f;
+    width:30%;
+    color:white;
+    text-align:center;
+    padding:5px 20px;
+    border-radius:10px;
+    margin-top:-200px;
+    margin-left:500px;
+    position:relative;
+}
+.experience-title{
+    font-size:4rem;
+}
+.experience-description{
+    font-size:1.7rem;
+}
+@media screen and (max-width:576px) {
+    .header{
+        padding:20px;
+    }
+    .nav-section,.features-container,.facts-container,.sponsors-img,.tab-section{
+        flex-direction:column;
+
+    }
+    .sponsors-img img{
+      width:140px;
+      height: 50px;
+    }
+    .sponsors-img{
+        gap:20px;
+    }
+    .features-img-section{
+        grid-template-columns: 1fr;
+    }
+    .features-content-section,.facts-container{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .facts-container{
+        gap:20px;
+    }
+    .facts-title,.facts-description{
+        text-align: center;
+    }
+    .experience{
+        margin:0 auto;
+        width:40%;
+    }
+}
+@media  screen and (min-width:576px) and (max-width:992px) {
+    .header{
+        padding:50px;
+    }
+    .nav-section,.features-container,.tab-section{
+        flex-direction:column;
+
+    }
+}
